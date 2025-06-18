@@ -111,8 +111,6 @@ function showRegistrationModal() {
                 <p><strong>Selected Track:</strong> ${selectedTrack}</p>
                 <p>Registration is currently open! To complete your registration:</p>
                 <ol>
-                    <li>Click the “Register Now” button below</li>
-                    <li>Choose your learning track and submit registration</li>
                     <li>Pay the mentorship/admin fee and send (POP) to 09061817858</li>
                     <div class="modal-contact" style='margin-bottom: 20px'>
                       <p>Zenith Bank</p> 
