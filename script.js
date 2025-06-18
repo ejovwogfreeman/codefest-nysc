@@ -111,10 +111,16 @@ function showRegistrationModal() {
                 <p><strong>Selected Track:</strong> ${selectedTrack}</p>
                 <p>Registration is currently open! To complete your registration:</p>
                 <ol>
-                    <li>Fill out the registration form</li>
-                    <li>Choose your preferred track</li>
-                    <li>Complete payment of ₦50,000 administration fee</li>
-                    <li>Begin your learning journey</li>
+                    <li>Click the “Register Now” button below</li>
+                    <li>Choose your learning track and submit registration</li>
+                    <li>Pay the mentorship/admin fee and send (POP) to 09061817858</li>
+                    <div class="modal-contact" style='margin-bottom: 20px'>
+                      <p>Zenith Bank</p> 
+                      <p>CODEFEST International Ltd</p>
+                      <p>1016084310</p>
+                    </div>
+                    <li>Get onboarded</li>
+                    <li>Start your journey with our guide</li>
                 </ol>
                 <div class="modal-contact">
                     <h3>Contact Information:</h3>
@@ -124,7 +130,7 @@ function showRegistrationModal() {
             </div>
             <div class="modal-footer">
                 <button class="btn-primary">Proceed to Registration</button>
-                <button class="btn-secondary modal-close">Close</button>
+                <button class="btn-danger modal-close">Close</button>
             </div>
         </div>
     `;
@@ -233,6 +239,16 @@ function showRegistrationModal() {
                 cursor: pointer;
                 font-weight: 600;
             }
+
+            .btn-danger {
+                background: #dc3545;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: 600;
+            }
             
             @keyframes fadeInModal {
                 to { opacity: 1; }
@@ -258,6 +274,9 @@ function showRegistrationModal() {
   // Handle proceed button
   modal.querySelector(".btn-primary").addEventListener("click", function () {
     showNotification("Redirecting to registration form...", "info");
+    setTimeout(() => {
+      window.open("https://forms.gle/YdnYeZzS9aD2Cqrs9", "_blank");
+    }, 1000);
     closeModal(modal);
     // Here you would redirect to actual registration form
   });
