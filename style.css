@@ -673,6 +673,7 @@ body {
 .application-btn {
   font-size: 20px;
   padding: 20px 40px;
+  margin: auto;
   background: var(--accent-orange);
 }
 
