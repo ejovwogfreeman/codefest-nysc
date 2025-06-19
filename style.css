@@ -935,7 +935,7 @@ body {
 
 .partners-track {
   display: flex;
-  animation: slide 20s linear infinite;
+  animation: slide 30s linear infinite;
   gap: 20px;
 }
 
@@ -982,4 +982,12 @@ body {
   font-size: 1.1rem;
   color: var(--gray-600);
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .partners-track {
+    display: flex;
+    animation: slide 5s linear infinite;
+    gap: 20px;
+  }
 }
