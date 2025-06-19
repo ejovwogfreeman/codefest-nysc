@@ -218,7 +218,7 @@ function showRegistrationModal() {
             }
             
             .btn-primary {
-                background: #2563eb;
+                background: #2e843b;
                 color: white;
                 border: none;
                 padding: 12px 24px;
@@ -342,7 +342,7 @@ function showNotification(message, type = "info") {
             }
             
             .notification-success {
-                background: #10b981;
+                background: #2e843b;
             }
             
             .notification-error {
@@ -350,7 +350,7 @@ function showNotification(message, type = "info") {
             }
             
             .notification-info {
-                background: #2563eb;
+                background: #2e843b;
             }
             
             @keyframes slideInNotification {

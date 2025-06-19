@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary-green: #10b981;
-  --primary-blue: #2563eb;
+  --primary-green: #89b276;
+  --primary-blue: #2e843b;
   --accent-orange: #f59e0b;
   --dark-gray: #1f2937;
   --medium-gray: #6b7280;
@@ -43,7 +43,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  /* height: 64px; */
+  padding: 10px 0px;
 }
 
 .logo-section {
@@ -108,7 +109,7 @@ body {
 }
 
 .cta-btn:hover {
-  background: #1d4ed8;
+  background: var(--primary-green);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
